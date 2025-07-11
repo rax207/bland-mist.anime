@@ -1,7 +1,4 @@
-import webbrowser
-import os
 
-html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -164,13 +161,3 @@ html = """
 
 </body>
 </html>
-"""
-
-file_name = "bland_mist_anime.html"
-with open(file_name, "w", encoding="utf-8") as f:
-    f.write(html)
-
-file_path = os.path.abspath(file_name)
-webbrowser.open(f"file://{file_path}")
-
-print("✅ Web page created and opened in your browser!")
